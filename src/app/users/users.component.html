@@ -1,1 +1,20 @@
-<p>users works!</p>
+<div class="container">
+    <table class="table text-center mt-3 text-white">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let userobj of data">
+                 <td>
+                     <button class="btn-sm btn-warning" (click)="toSelectId(userobj.id)">{{userobj.id}}</button>
+                 </td>
+                 <td>
+                     {{userobj.email}}
+                 </td>
+          </tr>
+        </tbody>
+    </table>
+</div>

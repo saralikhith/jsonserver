@@ -1,1 +1,32 @@
-<p>userdetails works!</p>
+<div class="container">
+    <table class="table mt-3 text-white text-center">
+        <thead>
+       <tr>
+           <th>id</th>
+           <th>name</th>
+           <th>email</th>
+           <th>address</th>
+           <th>phone</th>
+       </tr>
+    </thead>
+    <tbody>
+        <tr >
+            <td>
+                {{iddata.id}}
+            </td>
+            <td>
+                {{iddata.name}}
+            </td>
+            <td>
+                {{iddata.email}}
+            </td>
+            <td>
+                {{iddata.address.street}}
+            </td>
+            <td>
+                {{iddata.phone}}
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
